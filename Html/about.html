@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    .fade-in {
+      animation: fadeIn 2s ease-in forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+    .slide-in-left {
+      animation: slideInLeft 2s ease-in forwards;
+      transform: translateX(-100%);
+    }
+    @keyframes slideInLeft {
+      to {
+        transform: translateX(0);
+      }
+    }
+    .slide-in-right {
+      animation: slideInRight 2s ease-in forwards;
+      transform: translateX(100%);
+    }
+    @keyframes slideInRight {
+      to {
+        transform: translateX(0);
+      }
+    }
+    .button:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 slide-in-left">
+        <img class="object-cover object-center rounded shadow-2xl" alt="hero" src="/Img/about.jpg">
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pl-20 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center slide-in-right">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 fade-in">Personalized Diet Plans
+          for a Healthier You
+        </h1>
+        <p class="mb-8 leading-relaxed fade-in">Discover the perfect diet tailored just for you. Our expert recommendations ensure you enjoy delicious, healthy meals that suit your lifestyle and dietary needs. Say goodbye to one-size-fits-all diets and embrace a plan that's truly yours.</p>
+        <div class="flex justify-center">
+          <button class="button inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg fade-in"><a href="userprofile.html">Get Started </a></button>
+          <button class="button ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg fade-in">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Optional JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-Ho4DRFc7JnTn7bgt75NWT1mEzi6LQXT+LNr4rjzAtS5ZJ8njx8EYOsvTDcJG2gH6" crossorigin="anonymous"></script>
+</body>
+</html>
